@@ -17,16 +17,25 @@ spec:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: shanmukhavsv
+    repository: jenkinsx
   - key: staging
   - key: production
   ingress:
+<<<<<<< HEAD
     domain: "in2tive.xyz"
     externalDNS: false
+=======
+    domain: jenkinsx.in2tive.xyz
+    kind: ingress
+>>>>>>> 085982011f9521d8ad607553947e74fb7812b8e1
     namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: ishanmukhayadav
   repository: bucketrepo
   secretStorage: local
   vault: {}
